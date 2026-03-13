@@ -166,10 +166,14 @@ leadWordsOne = \lyricmode {
 \set stanza = "1."
 star -- ing at the paint of the cei -- ling,
 hop -- ing no one sees how you're feel -- ing,
-you think you can __ _ hide your -- self in the crowd
-qui -- et -- ly your lips are __ _ mov -- ing
-sync -- ing with the beats that are groov -- ing
-but in -- side your __ _ head you are sing -- ing loud
+you think you can dis -- guise your -- self in the crowd
+qui -- et -- ly your pale lips are mov -- ing
+light -- ly hum -- ming in per -- fect tun -- ing
+
+sure -- ly ga -- ther -- ing all glan -- ces in and out
+
+%sync -- ing with the beats that are groov -- ing
+%but in -- side your __ _ head you are sing -- ing loud
 
 
 }
@@ -200,12 +204,23 @@ Please do not per -- sue me for an -- oth -- er day,
 
 leadWordsTwo = \lyricmode { 
 \set stanza = "2." 
-pay -- ing for my drinks the whole e -- vening
-hang -- ing on my lips while I'm sing -- ing
+
+you and I sure share a same fee -- ling, 
+e -- ven on -- ly one seeks for heal -- ing,
+
+
+
+%pay -- ing for my drinks the whole e -- vening
+%hang -- ing on my lips while I'm sing -- ing
 you keep fol -- low -- ing ev -- er -- y  move I do 
-whisper -- ing lit -- tle things in your ears __ _
-you cant't make your blush dis -- ap -- pear __ _
-we both know all the ways __ _ _ this could end 
+
+You and I know the re -- so -- lu -- tion
+does -- n't mean you'll get ab -- so -- lu -- tion
+pure -- ly af -- fec -- tion no need -- less sham a -- do
+
+%whisper -- ing lit -- tle things in your ears __ _
+%you cant't make your blush dis -- ap -- pear __ _
+%we both know all the ways __ _ _ this could end 
 }
 
 leadWordsThree = \lyricmode {
