@@ -15,7 +15,7 @@ global = {
 harmonies = \chordmode {
   \germanChords
 \repeat volta 2 {
-\repeat unfold 6 {
+\repeat unfold 4 {
    e1~e4~e8 a8~a4 cis4:m
    e1~e4~e8 a8~a4 b4
  }
@@ -28,7 +28,7 @@ harmonies = \chordmode {
    cis4:m~cis8:m a2:maj7~a8:maj7 
  }
  
- \repeat volta 2 {
+ \repeat unfold 2 {
    e1~e4~e8 a8~a4 cis4:m
  e1~e4~e8 a8~a4 b4
  e1~e4~e8 a8~a4 cis4:m
@@ -49,7 +49,8 @@ harmonies = \chordmode {
 %    b1~b4 gis2:m~gis4:m
 %    e1~e4 a2~a4
    
-
+    e1 cis:m a e
+    e b a gis:m
   
 }
 
@@ -79,7 +80,6 @@ trumpettwoChorusMusic = \relative c'' {
 
 leadMusicverse = \relative c''{
 
-  R1*8
   
   dis8 dis dis dis dis dis cis b 
   cis cis cis b gis4 r
@@ -123,17 +123,28 @@ leadMusicchorus = \relative c''{
   b' b a gis8 b8~
   b gis8~gis2 a4
   b8 b8~b b8~b cis~cis b8~
-  b2 r2
+  b2 r2 \break
   
-  fis4 r gis r
-  b r8 cis~cis b~b r8
-  fis4 r gis r
-  b r8 dis~dis cis~cis r8
-  fis,4 r gis r
-  b r8 cis~cis b~b r8
-  fis4 r gis r
-  r1
+  e8 dis~dis cis~cis b~b fis~
+  fis e~e b~b4 r
+  e'8 dis~dis cis~cis b~b fis~
+  fis fis~fis gis~gis4 r
+  e'8 dis~dis cis~cis b~b r
+  e8 dis~dis cis~cis b~b r
+  e8 dis~dis cis~cis b~b b~
+  b r r a gis'8. fis dis8
   
+  R1*8
+  
+ %  fis4 r gis r
+%   b r8 cis~cis b~b r8
+%   fis4 r gis r
+%   b r8 dis~dis cis~cis r8
+%   fis,4 r gis r
+%   b r8 cis~cis b~b r8
+%   fis4 r gis r
+%   r1
+%   
   %gis gis fis4 e8 fis8~
   %fis8 cis8~cis2 cis4 
   %e8 e8~e e8~e fis8~fis e8~
@@ -147,7 +158,7 @@ leadMusicchorus = \relative c''{
 
 leadMusicBridge = \relative c''{
 
-  d4 d d e8 d8~
+  \key c \major d4 d d e8 d8~
   d4 cis2 a4
   b g b d8 dis8~
   dis2 r2
@@ -156,14 +167,27 @@ leadMusicBridge = \relative c''{
   cis a cis e
   fis2~fis4 r4 
   
-  gis4 gis gis e8 dis8~
+  \key e \major gis4 gis gis e8 dis8~
   dis4 e2 b4
   cis gis cis dis8 e8~
   e2 r2
   e4 dis gis, e'
   dis b dis b 
   e b cis dis
-  e2~e4 r4 
+  e2~e4 r4 \break
+  
+  \tempo 4 = 90
+  e,2 gis4 b 
+  fis'16 e fis8 e2 r4
+  fis16 e fis8 e2 cis4 
+  b2 r \break
+  
+  e,8 e b' b16 fis~fis8 r r4
+  r8 gis fis gis a gis fis e
+  e8 e b' b16 fis~fis8 r r4
+  r8 gis fis gis a gis fis e
+  
+  
 }
 
 leadWordsOne = \lyricmode { 
@@ -191,10 +215,14 @@ leadWordsChorus = \lyricmode {
 If I could put it in -- to words I'd write a song for you
 If I would know some love -- ly notes I'd write a song for you
 but all that's left to do now is sing it out like this
-la la la la la 
-la la la la la 
-la la la la la
+la _ la la la 
 la la 
+la _ la la la 
+la la 
+la _ la la
+la _ la la
+la _ la la la
+la la la la
 
 }
 
@@ -211,6 +239,9 @@ and sing -- ing's pre -- tty hard
 may -- be I will
 ab -- di -- cate and
 sing what's in my head
+
+la la la la la la la la la la la la la
+la la la la la la la la la la la la la la la la la la la la la la la la 
 
 
 }
@@ -238,20 +269,20 @@ leadWordsFour = \lyricmode {
 
 }
 backingOneVerseMusic = \relative c'' {
- R1*26
+ R1*18
 }
 
 backingOneChorusMusic = \relative c'' {
   R1*12
   
-  r4 e8( cis) r4 e8( cis) 
-  gis'4 r8 e~e gis~gis e
-  r4 e8( cis) r4 e8( cis) 
-  gis'4 r8 dis~dis e~e e
-  r4 e8( cis) r4 e8( cis) 
-  gis'4 r8 e~e gis~gis e
-  r4 e8( cis) r4 e8( cis) 
-  b8 b8~b b8~b cis~cis b8
+ %  r4 e8( cis) r4 e8( cis) 
+%   gis'4 r8 e~e gis~gis e
+%   r4 e8( cis) r4 e8( cis) 
+%   gis'4 r8 dis~dis e~e e
+%   r4 e8( cis) r4 e8( cis) 
+%   gis'4 r8 e~e gis~gis e
+%   r4 e8( cis) r4 e8( cis) 
+%   b8 b8~b b8~b cis~cis b8
   
 %  d4 a fis a 
 %  a e cis e 
@@ -314,17 +345,38 @@ leadGuitarMusic = \relative c {
 
 violinMusic = \relative c'' {
 % a und dis vermeisen
-R1*26
-  gis2~gis4~gis8 b8~b1
-  cis2~cis4~cis8 e,8 
-  fis gis a b cis a gis fis
-  gis2~gis4~gis8 b8~b1
-  cis2~cis4~cis8 e,8 
-  fis gis a b cis b gis fis
-  b4 b b b8 cis~
-  cis a~a2 cis4
-  b8 b8~b b8~b cis~cis b8~
-  b2 r2
+R1*18
+%   gis2~gis4~gis8 b8~b1
+%   cis2~cis4~cis8 e,8 
+%   fis gis a b cis a gis fis
+%   gis2~gis4~gis8 b8~b1
+%   cis2~cis4~cis8 e,8 
+%   fis gis a b cis b gis fis
+%   b4 b b b8 cis~
+%   cis a~a2 cis4
+%   b8 b8~b b8~b cis~cis b8~
+%   b2 r2
+
+R1*12
+  
+  fis,2 gis2 
+  b4. cis8~cis b~b4 
+  fis2 gis
+  b4. dis8~dis cis~cis4
+  fis,2 gis2 
+  b4. cis8~cis b~b4 
+  fis2 gis
+  b4. dis8~dis cis~cis4 \break
+  
+  r8  e,8 e8 e8 gis8 fis8 e8 cis8 
+  gis'8 fis4 e8 ~ e8  r8  cis''8  r8   
+  r8  e,,8 e8 e8 gis8 fis8 e8 cis8 
+  b'8 gis4 a8 ~ a8  r8  b'8  r8   
+  r8  e,,8 e8 e8 gis8 fis8 e8 cis8 
+  gis'8. b16 ~ b8 a8 ~ a16 e8. gis4  
+  r8  e8 e8 e8 gis8 fis8 e8 cis8 
+  fis'4. fis8 ~ fis4 e4 \break
+  
 R1*16
   
   % cis4 e cis gis8 fis8~
